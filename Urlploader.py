@@ -14,7 +14,7 @@ def upload_file(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Dosya yüklendi.")
 
 def main():
-    updater = Updater(token='YOUR_BOT_TOKEN', use_context=True)
+    updater = Updater(token='6234601195:AAEPMjC7bPVHNyNZpdefq49WGevNQ9ssHww', use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, upload_file))
